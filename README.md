@@ -83,9 +83,7 @@ Ostris AI-Toolkit, Kohya_ss LoRA 학습을 위한 **얼굴/머리 위주 1:1 크
 
 ### 📄 라이선스
 
-MIT License - 자유롭게 수정해서 쓰세요!
 
-### TODO
 
 - [ ] MediaPipe Face Mesh 모델로 일러스트 인식률 개선
 - [ ] 눈 기준 정렬 (eye-alignment) 옵션
