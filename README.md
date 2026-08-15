@@ -1,35 +1,34 @@
-# 머리 위주 1:1 크롭 v3
+# Single-Called-Head-Crop | LoRA Dataset Preprocessor
 
-브라우저에서만 돌아가는 이미지 일괄 크롭 툴. 폴더 지정 → 얼굴/머리 자동 감지 → 1:1 크롭 → 원하는 방식으로 저장.
+Ostris AI-Toolkit, Kohya_ss LoRA 학습을 위한 **얼굴/머리 위주 1:1 크롭 전처리 툴**
 
-**서버 업로드 없음 / 100% 로컬 / 설치 필요 없음 (index.html 하나)**
+> 학습 이미지가 제각각이라 LoRA가 얼굴을 못 배우나요? 폴더 하나 지정하면 자동으로 머리 중심으로 1:1 크롭해서 LoRA 학습에 최적화된 데이터셋을 만들어줍니다.
 
-![미리보기](./screenshot.png)
+![preview](./screenshot.png)
 
-### ✨ v3 업데이트
-- ✅ 드래그 수정: 사진이 손가락 따라가게 변경
-- ✅ 저장 3종: 폴더에 바로 저장 / ZIP 저장 / 개별 다운로드
-- ✅ MediaPipe 옵션: 일러스트 인식률 UP
+**Live Demo:** https://daning1212.github.io/Single-Called-Head-Crop/
 
-### 🚀 사용법
-1. index.html 더블클릭해서 브라우저로 열기
-2. 이미지 폴더 선택 또는 드래그 앤 드롭
-3. 결과 확인 후 드래그로 보정
-4. 저장 방식 선택해서 저장
+### 🌐 언어
+`index.html` 우상단 KO/EN 버튼으로 한글/영문 전환 가능 - 단일 파일로 다국어 지원
 
-### 저장 방식
-- **폴더에 바로 저장**: 크롬/엣지 전용, 가장 깔끔
-- **ZIP 압축 저장**: 모든 브라우저 호환
-- **개별 다운로드**: 파일 적을 때
+### 왜 필요한가? (for LoRA)
+- **SDXL / Pony / Illustrious LoRA**는 얼굴 비율이 일정해야 잘 배웁니다
+- 이 툴로 **1024x1024 1:1 정사각형, 머리 중심**으로 통일하면 trigger word 인식률 UP
 
-### 깃허브에 올리기 (가장 쉬운 방법)
-1. 이 압축을 푼다
-2. 깃허브에서 New Repository > `head-crop-1x1` 생성
-3. 풀린 파일 3개 (index.html, README.md, screenshot.png) 를 그대로 드래그해서 업로드 > Commit
-4. Settings > Pages > Branch: main 선택 > Save 하면 웹사이트 링크 생김!
+### 기능
+- **Batch Crop**: 폴더 통째로 100장까지 한 번에 처리
+- **Head-Centric**: FaceDetector / MediaPipe BlazeFace 자동 탐지
+- **LoRA Ready**: 512 / 1024 / 2048px, JPG/PNG/WebP
+- **Manual Adjust**: 드래그로 미세 조정 (intuitive)
+- **3가지 저장**: 폴더에 바로 저장 / ZIP / 개별 다운로드
+- **100% Local**: 서버 업로드 없음
 
-### 🔒 프라이버시
-이미지는 절대 서버로 안 올라감. 전부 브라우저 안에서만 처리됨.
+### 추천 세팅
+| 모델 | 해상도 | 여백 |
+| :--- | :--- | :--- |
+| SDXL, Pony | 1024px | 30% |
+| SD1.5 | 512px | 25% |
+| Illustrious | 1024px | 35% |
 
-### 📄 라이선스
-MIT - 맘대로 써도 됨.
+### License
+MIT
