@@ -6,7 +6,9 @@ Ostris AI-Toolkit, Kohya_ss LoRA 학습을 위한 **얼굴/머리 위주 1:1 크
 
 > 학습 이미지가 제각각이라 LoRA가 얼굴을 못 배우나요? 폴더 하나 지정하면 자동으로 머리 중심으로 1:1 크롭해서 LoRA 학습에 최적화된 데이터셋을 만들어줍니다.
 
-![preview](./screenshot.png)
+| 한글 | 영문 |
+| :---: | :---: |
+| ![KO](./screenshot-ko.png) | ![EN](./screenshot-en.png) |
 
 **Live Demo:** https://daning1212.github.io/Single-Called-Head-Crop/
 
