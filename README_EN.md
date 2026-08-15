@@ -31,3 +31,7 @@ Single `index.html` supports both KO/EN - Click KO/EN button on top right to swi
 
 ### License
 MIT
+
+![Language](https://img.shields.io/badge/language-KO%20%2F%20EN-blue)
+![LoRA](https://img.shields.io/badge/LoRA-Dataset%20Preprocessor-orange)
+![No Install](https://img.shields.io/badge/100%25%20Local-No%20Upload-green)
