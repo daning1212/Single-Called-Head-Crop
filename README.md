@@ -1,4 +1,6 @@
 # Single-Called-Head-Crop | LoRA Dataset Preprocessor
+> 🌐 **한글/영문 다국어 지원** - `index.html` 우상단 KO/EN 버튼으로 언어 전환 가능!
+> 🌐 **Bilingual (KO/EN)** - Switch language with KO/EN button on top right!
 
 Ostris AI-Toolkit, Kohya_ss LoRA 학습을 위한 **얼굴/머리 위주 1:1 크롭 전처리 툴**
 
