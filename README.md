@@ -34,3 +34,10 @@ Ostris AI-Toolkit, Kohya_ss LoRA 학습을 위한 **얼굴/머리 위주 1:1 크
 
 ### License
 MIT
+
+
+
+
+![Language](https://img.shields.io/badge/language-KO%20%2F%20EN-blue)
+![LoRA](https://img.shields.io/badge/LoRA-Dataset%20Preprocessor-orange)
+![No Install](https://img.shields.io/badge/100%25%20Local-No%20Upload-green)
