@@ -16,6 +16,7 @@ Single `index.html` supports both KO/EN - Click KO/EN button on top right to swi
 - Normalize to **1024x1024 head-centric 1:1**
 
 ### Features
+- **Image Selection**: Open one or multiple images with **Open Images**, or an entire folder with **Open Folder**
 - **Batch Crop**: Up to 100 images at once
 - **Head-Centric**: FaceDetector + MediaPipe BlazeFace
 - **LoRA Ready**: 512/1024/2048px, JPG/PNG/WebP
